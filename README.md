@@ -1,0 +1,1 @@
+project that will help you track the number of times you click keyboard characters in a day, month, and year using Python. You can use this project with GitHub to save and log the number of clicks on different characters, and even visualize the data later.
