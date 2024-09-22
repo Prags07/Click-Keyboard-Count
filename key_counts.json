@@ -1,0 +1,21 @@
+import json
+import matplotlib.pyplot as plt
+
+# Load key counts data
+with open('key_counts.json', 'r') as f:
+    key_counts = json.load(f)
+
+# Select a specific day or month
+day = "2024-09-21"
+month = "2024-09"
+
+# Plot the key counts for the selected day
+day_counts = key_counts.get(day, {})
+keys = list(day_counts.keys())
+values = list(day_counts.values())
+
+plt.bar(keys, values)
+plt.title(f"Key Presses on {day}")
+plt.xlabel("Keys")
+plt.ylabel("Count")
+plt.show()
